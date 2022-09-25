@@ -9,5 +9,5 @@ jobs:
         uses: appleboy/ssh-action@master
         with:
           host: 35.154.253.216
-          key: {{ secrets.PRIVATE_KEY }}
+          key: ${{ secrets.PRIVATE_KEY }}
           script: echo hello world > hello.txt
